@@ -1,19 +1,21 @@
-import React, { Suspense, lazy } from 'react'
-import { Route, Routes } from 'react-router-dom';
+import React from 'react'
+import {BrowserRouter, Route, Routes } from 'react-router-dom';
+import Home from './Pages/Home/Home';
+import Login from './Pages/Login/Login';
+import Register from './Pages/Register/Register';
 
-const Home = lazy(() => import("./Pages/Home/Home.jsx"));
-const Login = lazy(() => import("./Pages/Login/Login"));
-const Register = lazy(() => import("./Pages/Register/Register"));
+
+
 
 function App() {
   return (
-    <Suspense>
+    <BrowserRouter>
       <Routes>
-         <Route path='/Zuri-portfolio-authentication/' element={<Home/>}/>
-         <Route path='/Zuri-portfolio-authentication/login' element={<Login/>}/>
-         <Route path='/Zuri-portfolio-authentication/register' element={<Register/>}/>
+         <Route path='/' element={<Home/>}/>
+         <Route path='/login' element={<Login/>}/>
+         <Route path='/register' element={<Register/>}/>
       </Routes>
-    </Suspense>
+    </BrowserRouter>
   )
 }
 
