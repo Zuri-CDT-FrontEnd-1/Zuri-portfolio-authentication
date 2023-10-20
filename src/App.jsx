@@ -9,9 +9,9 @@ function App() {
   return (
     <Suspense>
       <Routes>
-         <Route path='/user-authenticator/' element={<Home/>}/>
-         <Route path='/user-authenticator/login' element={<Login/>}/>
-         <Route path='/user-authenticator/register' element={<Register/>}/>
+         <Route path='/Zuri-portfolio-authentication/' element={<Home/>}/>
+         <Route path='/Zuri-portfolio-authentication/login' element={<Login/>}/>
+         <Route path='/Zuri-portfolio-authentication/register' element={<Register/>}/>
       </Routes>
     </Suspense>
   )
