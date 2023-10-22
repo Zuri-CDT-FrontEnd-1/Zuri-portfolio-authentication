@@ -1,12 +1,10 @@
 .faqs {
-    width: 80%;
-    max-width: 1280px;
-    margin: 0 auto;
-    padding: 15px;
+    width: 100vw;
+    padding: 10%;
     background: #0e1628;
     color: #7f8e9f;
 }
-
+  
 .faqs .faq {
     margin: 15px;
     padding: 15px;
