@@ -1,8 +1,11 @@
-import React from 'react'
+import React from "react";
+import FAQS from "./faq/FAQS";
 
-function Home() {
+const Home = () => {
   return (
-    <div className='Home'>Home world</div>
+    <div className="Home">
+      <FAQS />
+    </div>
   )
 }
 
