@@ -17,6 +17,7 @@ function Welcome() {
        <h1>Team One</h1>
        <div className='Links'>
           <Link to='/Login'>Login</Link>
+          <Link to='/home'>Home</Link>
           <Link to='/register'>Register</Link>
        </div>
     </div>
