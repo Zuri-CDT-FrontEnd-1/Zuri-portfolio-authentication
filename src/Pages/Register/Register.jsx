@@ -7,9 +7,13 @@ import { Link } from 'react-router-dom'
 
 
 function Register() {
-
+  const [fullname, setFullname] = useState('')  
 const [username, setUsername] = useState('')  
 const [password, setPassword] = useState('')  
+
+const handleFullnameChange = (e) =>{
+  setFullname(e.target.value)
+  }
 
 const handleUsernameChange = (e) =>{
 setUsername(e.target.value)
@@ -43,22 +47,22 @@ const handleSubmit = (e) => {
 
         <div className='flex'>
             <label htmlFor="fullname" className='form-label'>Fullname*</label>
-            <input type="text" placeholder="Enter your Fullname" name="fullname" class="fullname"  onChange={handleSubmit} required=""></input>
+            <input type="text" placeholder="Enter your Fullname" name="fullname" class="fullname" value={fullname}   onChange={handleFullnameChange} required=""></input>
           </div>
 
           <div className='flex'>
             <label htmlFor="username" className='form-label'>Username*</label>
-            <input type="text" placeholder="Enter your Username" name="username" class="username" value={username} onChange={handleSubmit} required=""></input>
+            <input type="text" placeholder="Enter your Username" name="username" class="username" value={username} onChange={handleUsernameChange} required=""></input>
           </div>
 
           <div className='flex'>
             <label htmlFor="password" className='form-label'>Password*</label>
-            <input type="text" placeholder="Enter your password" name="username" value={password} onChange={handleSubmit} class="username" required=""></input>
+            <input type="text" placeholder="Enter your password" name="username" value={password} onChange={handlePasswordChange} class="username" required=""></input>
           </div>
 
-          <label class="checkbox-container">Remember Me
+          <label className="checkbox-container">Remember Me
             <input type="checkbox" />
-            <span class="checkmark"></span>
+            <span className="checkmark"></span>
           </label>
 
           <button className='login-button' type='submit' >Register</button>

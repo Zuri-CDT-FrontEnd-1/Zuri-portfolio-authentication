@@ -115,7 +115,7 @@ input[type="text"] {
 .flex-row {
   display: flex;
   justify-content: space-between;
-  margin-top: 1rem;
+  margin-top: 3rem;
 }
 .blue {
   color: #3cb8d9;
@@ -144,7 +144,7 @@ input[type="text"] {
 
 @media only screen and (max-width: 768px) {
   .login-card {
-    padding: 1rem 3rem;
+    padding: 1rem 2rem;
   }
   .login-heading{
     margin: 75px 0 26px 0;
@@ -158,6 +158,7 @@ input[type="text"] {
   .flex-row {
     flex-direction: column;
     align-items: center;
+    gap: 1rem;
   }
   .login-heading {
     font-size: 1.7rem;
@@ -169,6 +170,9 @@ input[type="text"] {
   .pics-container{
     height: 6rem;
     width: 6rem;
+  }
+  .blue {
+    font-size: 1rem;
   }
   
 }

@@ -17,6 +17,7 @@ function Login() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
+    console.log(username)
   }
 
 
@@ -30,15 +31,15 @@ function Login() {
         <form action="" onSubmit={handleSubmit}>
           <div className='flex'>
             <label htmlFor="username" className='form-label'>Username*</label>
-            <input type="text" placeholder="Enter your Username" name="username" class="username" value={username} onChange={handleSubmit} required=""></input>
+            <input type="text" placeholder="Enter your Username" name="username" class="username" value={username} onChange={handleUsernameChange} required=""></input>
           </div>
           <div className='flex'>
             <label htmlFor="password" className='form-label'>Password*</label>
-            <input type="text" placeholder="Enter your password" name="username" value={password} onChange={handleSubmit} class="username" required=""></input>
+            <input type="text" placeholder="Enter your password" name="username" value={password} onChange={handlePasswordChange} class="username" required=""></input>
           </div>
-          <label class="checkbox-container">Remember Me
+          <label className="checkbox-container">Remember Me
             <input type="checkbox" />
-            <span class="checkmark"></span>
+            <span className="checkmark"></span>
           </label>
           <button className='login-button' type='submit' >Login</button>
         </form>
