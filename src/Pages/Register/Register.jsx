@@ -3,7 +3,7 @@ import './Register.css'
 import login from '../../assets/login.png'
 import { useState } from 'react'
 import { Link } from 'react-router-dom'
-// import OAuth from 'react-oauth'
+
 
 
 function Register() {
@@ -22,20 +22,14 @@ const handleSubmit = (e) => {
   e.preventDefault();
 
   console.log(username)
-  // Reset form after submission
-  // setPassword('');
-  // setUsername('');
+  
 }
 
 
   return (
-    <div>
+    <div className='login-container'>
 
-      <div className="relative">
-        <div className="login-container-register"></div>
-        <div className="login-background-register"></div>
-      </div>
-
+     
 
 
       <div className="login-card-register">
@@ -78,9 +72,7 @@ const handleSubmit = (e) => {
 
       </div>
 
-      <div className="footer">
-        <p className='footer-text'>Sample text. Click to select the text box. Click again or double click to start editing the text.</p>
-      </div>
+    
     </div>
   )
 }
